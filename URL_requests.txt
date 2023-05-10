@@ -1,0 +1,21 @@
+// returns the total number of rows from Airport:
+http://localhost:3000/countAllAirports
+
+// returns the entire row from Carrier based on the opCarrier:
+http://localhost:3000/carriers?opCarrier=9E
+
+// returns the entire row from Airport for defined origin and dest:
+http://localhost:3000/airports?origin=ONT&dest=SJC
+
+// search in the Flight based on flightID:
+http://localhost:3000/flightsID?flight_id=2
+
+// search in Flight based on flDate, carrierTD, opCarrierFlNum, airportID:
+http://localhost:3000/flightsinfo?FL_DATE=2020-01-01&Carrier_id=1&OP_CARRIER_FL_NUM=5888.00000&Airport_id=1
+
+// deleting a flight row by indecating  its flightID
+http://localhost:3000/deleteflight?flight_id=2
+
+// editing a flight row by indicating the flightID and changing the attributes value to the desirable one.
+http://localhost:3000/editflights?flight_id=2
+{"flightID": 1, "carrierID":2, "opCarrierFlNum": 6276.0}
